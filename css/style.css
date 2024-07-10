@@ -453,9 +453,8 @@ body::-webkit-scrollbar-thumb{
  
  /*---------service-------*/
  .service-img{
-   width: 350px;
    height: 15rem;
-   object-fit:  cover;
+  max-width: 348px; 
    border-top-left-radius: 5px;
    border-top-left-radius: 5px;
  
@@ -474,7 +473,8 @@ body::-webkit-scrollbar-thumb{
    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
    cursor: pointer;
    transition: var(--transition);
-  max-width: 22rem; 
+   max-width: 22rem; 
+ 
   
    
  }
@@ -544,7 +544,19 @@ body::-webkit-scrollbar-thumb{
       width: 29%;
       float: left;
       margin-right: 4.33%;
+       
    }
+ }
+  
+ @media screen and ( min-width:300px){
+     .service-img{
+      height: 15rem;
+      max-width: 348px; 
+       border-top-left-radius: 5px;
+       border-top-left-radius: 5px;
+     
+     }
+     
  }
 
 
